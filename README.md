@@ -25,6 +25,7 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 
 MODELS.PY
+```
 from django.db import models
 from django.contrib import admin
 class Movies(models.Model):
@@ -36,13 +37,13 @@ class Movies(models.Model):
  
 class MoviesAdmin(admin.ModelAdmin):
     list_display=('Movie_ID', 'Movie_name', 'Release_date', 'Director','Actors')
-
-
+```
 ADMIN.PY
+```
 from django.contrib import admin
 from .models import Movies, MoviesAdmin
 admin.site.register(Movies,MoviesAdmin)
-
+```
 
 ## OUTPUT
 
